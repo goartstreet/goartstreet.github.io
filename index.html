@@ -1,6 +1,124 @@
-<!DOCTYPE html>
-<html>
+!DOCTYPE html>
+<html lang="en">
+
 <head>
-<script>document.location.href="https://gogoartstreet.com/";</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東海藝術街-地圖</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://gogoartstreet.com/wp-content/uploads/2020/06/cropped-1cm99藝術街女孩-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://gogoartstreet.com/wp-content/uploads/2020/06/cropped-1cm99藝術街女孩-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://gogoartstreet.com/wp-content/uploads/2020/06/cropped-1cm99藝術街女孩-270x270.png" />
 </head>
+
+<body>
+
+    <div class="map">
+
+        <!-- animation items -->
+        <div class="item-1">
+            <img src="img/遛狗的人.gif" alt="">
+        </div>
+        <div class="item-2">
+            <img src="img/椰子樹.gif" alt="">
+        </div>
+        <div class="item-3">
+            <img src="img/綠衣人.gif" alt="">
+        </div>
+        <button class="item-4 audio-icon" onclick="playAudio('audio/貓叫聲.mp3')">
+                <img src="img/黑貓_左.gif" alt="">
+        </button>
+        <div class="item-5">
+            <img src="img/兩個人.gif" alt="">
+        </div>
+        <button class="item-6 audio-icon" onclick="playAudio('audio/汽車喇叭.mp3')">
+            <img src="img/機車.gif" alt="">
+        </button>
+        <button class="item-7 audio-icon" onclick="playAudio('audio/車子行駛.mp3')">
+            <img src="img/巴士.gif" alt="">
+        </button>
+        <div class="item-8">
+            <img src="img/cycle.png" alt="">
+        </div>
+        <button class="item-9 audio-icon" onclick="playAudio('audio/貓叫聲.mp3')">
+            <img src="img/黑貓_右.gif" alt="">
+        </button>
+
+        <!-- pin links -->
+        <a href="https://gogoartstreet.com/huafeng/" target="_blank" class="point01 dot-r">樺豐餐館</a>
+        <a href="https://gogoartstreet.com/wendy-artstreet/" target="_blank" class="point02 dot-r">主鈴手創坊</a>
+        <a href="https://gogoartstreet.com/lishun/" target="_blank" class="point03 dot-r">東海里關懷據點</a>
+        <a href="https://gogoartstreet.com/witchaude/" target="_blank" class="point04 dot-b">巫女奧達</a>
+        <a href="https://gogoartstreet.com/mingmushushe/" target="_blank" class="point05 dot-r">明目書社</a>
+        <a href="https://gogoartstreet.com/jiu-guang-hu-lu/" target="_blank" class="point06 dot-r">橘光呼嚕X背包Cat貓の咖啡館</a>
+        <a href="https://gogoartstreet.com/hexuan/" target="_blank" class="point07 dot-t">合宣不動產</a>
+        <a href="https://gogoartstreet.com/alanbiersteak/" target="_blank" class="point08 dot-t">阿蘭貝爾 牛排廚房</a>
+        <a href="https://gogoartstreet.com/indiamarketplace/" target="_blank" class="point09 dot-b">印度市集</a>
+        <a href="https://gogoartstreet.com/lunexmauvis/" target="_blank" class="point10 dot-t">月冠瑪菲斯</a>
+        <a href="https://gogoartstreet.com/xiao-xiang-zi/" target="_blank" class="point11 dot-t">小巷子<br>豆花</a>
+        <a href="https://gogoartstreet.com/ruminant/" target="_blank" class="point12 dot-r">慕茗萊</a>
+        <a href="https://gogoartstreet.com/dreamer7/" target="_blank" class="point13 dot-r">花呆七號</a>
+        <a href="https://gogoartstreet.com/bei-ou/" target="_blank" class="point14 dot-r">北歐設計</a>
+        <a href="https://gogoartstreet.com/decolife1992/" target="_blank" class="point15 dot-r">生活民族</a>
+        <a href="https://gogoartstreet.com/panhouse/" target="_blank" class="point16 dot-r">潘潘喜歡</a>
+        <a href="https://gogoartstreet.com/mufun2020/" target="_blank" class="point17 dot-r">伊凡生活家飾</a>
+        <a href="https://gogoartstreet.com/kaky/" target="_blank" class="point18 dot-b">KAKY</a>
+        <a href="https://gogoartstreet.com/myfoot/" target="_blank" class="point19 dot-r">我的腳</a>
+        <a href="https://gogoartstreet.com/aifanli/" target="_blank" class="point20 dot-r">艾凡里</a>
+        <a href="https://gogoartstreet.com/melbourne/" target="_blank" class="point21 dot-r">墨爾本巷弄</a>
+        <a href="https://gogoartstreet.com/coffeemap/" target="_blank" class="point22 dot-l">咖啡地圖</a>
+        <a href="https://gogoartstreet.com/liyunjewellery/" target="_blank" class="point23 dot-r">李雲風情坊</a>
+        <a href="https://gogoartstreet.com/cozylife/" target="_blank" class="point24 dot-r">Cozy Life舒適生活</a>
+        <a href="https://gogoartstreet.com/hu-ruo-yu/" target="_blank" class="point26 dot-l">忽若寓</a>
+        <a href="https://gogoartstreet.com/xiao-zi-zai/" target="_blank" class="point27 dot-r">小自在</a>
+        <a href="https://gogoartstreet.com/supernoodlehouse/" target="_blank" class="point28 ver dot-b">蘇菠麵</a>
+        <a href="https://gogoartstreet.com/donghai-yucun/" target="_blank" class="point29 ver dot-t">東海漁村花園婚禮會館</a>
+        <a href="https://gogoartstreet.com/papaya/" target="_blank" class="point30 ver dot-t">小農木瓜牛奶</a>
+        <a href="https://dhes.tc.edu.tw/" target="_blank" class="point31 dot-t">東海<br>國民小學</a>
+        <a href="https://gogoartstreet.com/yeongcherndesign/" target="_blank" class="point32 ver dot-t">永宸室內設計</a>
+        <a href="https://gogoartstreet.com/yesu/" target="_blank" class="point33 ver dot-t">耶穌藝廊</a>
+        <a href="" class="point34 dot-b">和欣客運<br>停車場</a>
+        <a href="https://gogoartstreet.com/eryue-shanjia/" target="_blank" class="point35 ver dot-t">二月山家</a>
+        <a href="https://gogoartstreet.com/yi-xian-art-space/" target="_blank" class="point36 ver dot-t">一閑</a>
+        <a href="https://gogoartstreet.com/qiyifang/" target="_blank" class="point37 ver dot-b">奇奕坊</a>
+        <a href="https://www.ljfa.org.tw/" target="_blank" class="point38 ver dot-b">龍井農會</a>
+        <a href="https://gogoartstreet.com/kobayashi/" target="_blank" class="point39 ver dot-b">小林眼鏡</a>
+        <a href="https://gogoartstreet.com/shiau-yi-yi-pu/" target="_blank" class="point40 ver dot-t">小衣乙舖</a>
+        <a href="https://gogoartstreet.com/kangquan/" target="_blank" class="point41 ver dot-t">康泉烘焙坊</a>
+        <a href="" class="point42 ver dot-t">美廉社</a>
+        <a href="https://gogoartstreet.com/daystar-pc/" target="_blank" class="point43 dot-t">旭商電腦</a>
+        <a href="" class="point44">東海里活動中心 •</a>
+        <a href="https://gogoartstreet.com/tianjingfang/" target="_blank" class="point45 dot-l">天晶坊</a>
+        <a href="" class="point46 dot-l">藝術街停車場</a>
+        <a href="https://gogoartstreet.com/leecherish1996/" target="_blank" class="point47 dot-l text-left">李記珍愛<br> 蘿蔔糕專賣店</a>
+        <a href="https://gogoartstreet.com/weili/" target="_blank" class="point48 dot-l">瑋立珠寶</a>
+        <a href="https://gogoartstreet.com/jack-wolfskin/" target="_blank" class="point49 text-left dot-l">小狼多奇<br>戶外用品專賣店</a>
+        <a href="https://gogoartstreet.com/a-da-family/" target="_blank" class="point50 dot-l">阿達家族</a>
+        <a href="https://gogoartstreet.com/huabankai/" target="_blank" class="point51 dot-l">花半開</a>
+        <a href="https://gogoartstreet.com/snhair/" target="_blank" class="point52 dot-l">S&N Hair Salon</a>
+        <a href="https://gogoartstreet.com/yiyitang/" target="_blank" class="point53 dot-b">頤億堂</a>
+        <a href="https://gogoartstreet.com/heyi-life/" target="_blank" class="point54 dot-l text-left">禾藝<br>生活美學</a>
+        <a href="https://gogoartstreet.com/firenze/" target="_blank" class="point55 dot-t">佛羅倫斯</a>
+        <a href="https://gogoartstreet.com/er-yachatang/" target="_blank" class="point56 dot-t">爾雅<br>茶堂</a>
+        <a href="https://gogoartstreet.com/xiao-zi-zai/  " target="_blank" class="point57 dot-b">小自在</a>
+        <a href="" class="point58 dot-l">頂好<br>超市</a>
+        <a href="https://gogoartstreet.com/da-guan/" target="_blank" class="point59 dot-t">大觀藝術坊</a>
+        <a href="https://gogoartstreet.com/artshill/" target="_blank" class="point60 dot-t">藝術山丘</a>
+        <a href="https://gogoartstreet.com/timeline-cafe-studio/" target="_blank" class="point61 dot-b">時間軸咖啡</a>
+        <a href="https://gogoartstreet.com/pharmacy/" target="_blank" class="point62 dot-l">國際大藥局</a>
+        <img src="./img/map.jpg">
+    </div>
+
+</body>
+
+<script>
+    function playAudio(url) {
+        new Audio(url).play();
+    }
+</script>
+
 </html>
