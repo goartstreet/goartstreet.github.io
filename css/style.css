@@ -1,0 +1,672 @@
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap" rel="stylesheet">body {
+    font-family: 'Noto Sans TC', sans-serif !important;
+}
+
+
+/*default*/
+
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
+.ver {
+    writing-mode: vertical-lr;
+}
+
+.dot-r::before {
+    content: "•";
+    font-size: 18px;
+    position: absolute;
+    right: -14px;
+    top: 0;
+}
+
+.dot-l::before {
+    content: "•";
+    font-size: 18px;
+    position: absolute;
+    left: -14px;
+    top: 0;
+}
+
+.dot-t::before {
+    content: "•";
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -12px;
+}
+
+.dot-b::before {
+    content: "•";
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -12px;
+}
+
+.map {
+    width: 1280px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+.map img {
+    width: 100%;
+}
+
+.map a {
+    font-family: 'Noto Sans TC', sans-serif !important;
+    font-weight: 400;
+    text-align: center;
+    display: inline-block;
+    max-width: 100px;
+    position: relative;
+    font-size: 8px;
+    color: #4d4d4d;
+    text-decoration: none;
+    transform: scale(.8);
+    transition: .3s ease-in-out;
+    line-height: 13px;
+    z-index: 9;
+}
+
+.map a:hover {
+    color: #c45f63;
+    transform: scale(1.1);
+    transition: .2s ease-in-out;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+
+/* pin position */
+
+.map .point01 {
+    position: absolute;
+    bottom: 1355px;
+    left: 647px;
+}
+
+.map .point02 {
+    position: absolute;
+    bottom: 1309px;
+    left: 636px;
+}
+
+.map .point03 {
+    position: absolute;
+    bottom: 1203px;
+    left: 610px;
+}
+
+.map .point04 {
+    position: absolute;
+    bottom: 1190px;
+    left: 641px;
+}
+
+.map .point05 {
+    position: absolute;
+    bottom: 1147px;
+    left: 639px;
+}
+
+.map .point06 {
+    position: absolute;
+    bottom: 1115px;
+    left: 590px;
+}
+
+.map .point07 {
+    position: absolute;
+    bottom: 1071px;
+    left: 542px;
+}
+
+.map .point08 {
+    position: absolute;
+    bottom: 1069px;
+    left: 600px;
+}
+
+.map .point09 {
+    position: absolute;
+    bottom: 996px;
+    left: 602px;
+}
+
+.map .point10 {
+    position: absolute;
+    bottom: 959px;
+    left: 542px;
+}
+
+.map .point11 {
+    position: absolute;
+    bottom: 948px;
+    left: 602px;
+}
+
+.map .point12 {
+    position: absolute;
+    bottom: 957px;
+    left: 650px;
+}
+
+.map .point13 {
+    position: absolute;
+    bottom: 943px;
+    left: 639px;
+}
+
+.map .point14 {
+    position: absolute;
+    bottom: 942px;
+    left: 570px;
+}
+
+.map .point15 {
+    position: absolute;
+    bottom: 917px;
+    left: 634px;
+}
+
+.map .point16 {
+    position: absolute;
+    bottom: 903px;
+    left: 634px;
+}
+
+.map .point17 {
+    position: absolute;
+    bottom: 889px;
+    left: 613px;
+}
+
+.map .point18 {
+    position: absolute;
+    bottom: 878px;
+    left: 587px;
+}
+
+.map .point19 {
+    position: absolute;
+    bottom: 876px;
+    left: 645px;
+}
+
+.map .point20 {
+    position: absolute;
+    bottom: 834px;
+    left: 643px;
+}
+
+.map .point21 {
+    position: absolute;
+    bottom: 789px;
+    left: 447px;
+}
+
+.map .point22 {
+    position: absolute;
+    bottom: 795px;
+    left: 556px;
+}
+
+.map .point23 {
+    position: absolute;
+    bottom: 794px;
+    left: 623px;
+}
+
+.map .point24 {
+    position: absolute;
+    bottom: 780px;
+    left: 591px;
+}
+
+.map .point25 {
+    position: absolute;
+    bottom: 759px;
+    left: 633px;
+}
+
+.map .point26 {
+    position: absolute;
+    bottom: 696px;
+    left: 557px;
+}
+
+.map .point27 {
+    position: absolute;
+    bottom: 680px;
+    left: 445px;
+}
+
+.map .point28 {
+    position: absolute;
+    bottom: 772px;
+    left: 137px;
+}
+
+.map .point29 {
+    position: absolute;
+    bottom: 533px;
+    left: 222px;
+}
+
+.map .point30 {
+    position: absolute;
+    bottom: 550px;
+    left: 281px;
+}
+
+.map .point31 {
+    position: absolute;
+    bottom: 736px;
+    left: 305px;
+}
+
+.map .point32 {
+    position: absolute;
+    bottom: 533px;
+    left: 315px;
+}
+
+.map .point33 {
+    position: absolute;
+    bottom: 547px;
+    left: 332px;
+}
+
+.map .point34 {
+    position: absolute;
+    bottom: 656px;
+    left: 333px;
+}
+
+.map .point35 {
+    position: absolute;
+    bottom: 539px;
+    left: 349px;
+}
+
+.map .point36 {
+    position: absolute;
+    bottom: 550px;
+    left: 367px;
+}
+
+.map .point37 {
+    position: absolute;
+    bottom: 627px;
+    left: 399px;
+}
+
+.map .point38 {
+    position: absolute;
+    bottom: 619px;
+    left: 418px;
+}
+
+.map .point39 {
+    position: absolute;
+    bottom: 584px;
+    left: 550px;
+}
+
+.map .point40 {
+    position: absolute;
+    bottom: 478px;
+    left: 582px;
+}
+
+.map .point41 {
+    position: absolute;
+    bottom: 469px;
+    left: 618px;
+}
+
+.map .point42 {
+    position: absolute;
+    bottom: 490px;
+    left: 639px;
+}
+
+.map .point43 {
+    position: absolute;
+    bottom: 389px;
+    left: 942px;
+}
+
+.map .point44 {
+    position: absolute;
+    bottom: 1575px;
+    left: 884px;
+}
+
+.map .point45 {
+    position: absolute;
+    bottom: 1252px;
+    left: 758px;
+}
+
+.map .point46 {
+    position: absolute;
+    bottom: 1186px;
+    left: 781px;
+}
+
+.map .point47 {
+    position: absolute;
+    bottom: 1121px;
+    left: 792px;
+}
+
+.map .point48 {
+    position: absolute;
+    bottom: 1053px;
+    left: 744px;
+}
+
+.map .point49 {
+    position: absolute;
+    bottom: 909px;
+    left: 735px;
+}
+
+.map .point50 {
+    position: absolute;
+    bottom: 897px;
+    left: 741px;
+}
+
+.map .point51 {
+    position: absolute;
+    bottom: 893px;
+    left: 837px;
+}
+
+.map .point52 {
+    position: absolute;
+    bottom: 871px;
+    left: 734px;
+}
+
+.map .point53 {
+    position: absolute;
+    bottom: 869px;
+    left: 841px;
+}
+
+.map .point54 {
+    position: absolute;
+    bottom: 816px;
+    left: 738px;
+}
+
+.map .point55 {
+    position: absolute;
+    bottom: 832px;
+    left: 799px;
+}
+
+.map .point56 {
+    position: absolute;
+    bottom: 820px;
+    left: 845px;
+}
+
+.map .point57 {
+    position: absolute;
+    bottom: 817px;
+    left: 798px;
+}
+
+.map .point58 {
+    position: absolute;
+    bottom: 768px;
+    left: 738px;
+}
+
+.map .point59 {
+    position: absolute;
+    bottom: 716px;
+    left: 730px;
+}
+
+.map .point60 {
+    position: absolute;
+    bottom: 712px;
+    left: 792px;
+}
+
+.map .point61 {
+    position: absolute;
+    bottom: 592px;
+    left: 850px;
+}
+
+.map .point62 {
+    position: absolute;
+    bottom: 561px;
+    left: 750px;
+}
+
+.point39,
+.point38 {
+    writing-mode: vertical-lr;
+}
+
+.point01 {
+    text-align: center;
+}
+
+
+/* animation items */
+
+.item-1 {
+    position: absolute;
+    right: 16%;
+    top: 56%;
+}
+
+.item-1 img {
+    width: 180px !important;
+}
+
+.item-2 {
+    position: absolute;
+    right: 4%;
+    top: 9.5%;
+}
+
+.item-2 img {
+    width: 300px !important;
+}
+
+.item-3 {
+    position: absolute;
+    left: 30%;
+    bottom: 30.5%;
+}
+
+.item-3 img {
+    width: 160px !important;
+}
+
+.item-4 {
+    position: absolute;
+    left: 25.5%;
+    top: 25%;
+    animation-name: item-4;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+}
+
+@keyframes item-4 {
+    0% {
+        left: 30.5%;
+        top: 25%;
+    }
+    49.9% {
+        transform: scaleX(1) rotate(0);
+    }
+    50% {
+        left: 46%;
+        top: 25%;
+        transform: scaleX(-1);
+    }
+    99.9% {
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 30.5%;
+        top: 25%;
+        transform: scaleX(1);
+    }
+}
+
+.item-4 img {
+    width: 220px !important;
+}
+
+.item-5 {
+    position: absolute;
+    left: 38.5%;
+    top: 46.5%;
+}
+
+.item-5 img {
+    width: 140px !important;
+}
+
+.item-6 {
+    position: absolute;
+    right: -11%;
+    bottom: 7.5%;
+}
+
+.item-6 img {
+    width: 420px !important;
+}
+
+.item-7 {
+    position: absolute;
+    left: 29%;
+    bottom: 20%;
+    animation-name: item-7;
+    animation-duration: 18s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    z-index: 1;
+}
+
+.item-7 img {
+    width: 240px !important;
+}
+
+@keyframes item-7 {
+    0% {
+        left: 29%;
+        bottom: 20%;
+    }
+    49.9% {
+        transform: scaleX(1) rotate(0);
+    }
+    50% {
+        left: 0;
+        bottom: 35%;
+        transform: scaleX(-1) rotate(-10deg);
+    }
+    99.9% {
+        transform: scaleX(-1) rotate(-10deg);
+    }
+    100% {
+        left: 29%;
+        bottom: 20%;
+        transform: scaleX(1);
+    }
+}
+
+.item-8 {
+    position: absolute;
+    right: 12%;
+    bottom: 26%;
+}
+
+.item-8 img {
+    width: 220px !important;
+}
+
+.item-9 {
+    position: absolute;
+    top: 27.5%;
+    right: 6%;
+    animation-name: item-9;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    z-index: 1;
+    /*animation-direction: alternate-reverse;  */
+}
+
+@keyframes item-9 {
+    0% {
+        top: 27.5%;
+        right: 6%;
+    }
+    49.9% {
+        transform: scaleX(1) rotate(0);
+    }
+    50% {
+        top: 27.5%;
+        right: 18%;
+        transform: scaleX(-1);
+    }
+    99.9% {
+        transform: scaleX(-1);
+    }
+    100% {
+        top: 27.5%;
+        right: 6%;
+        transform: scaleX(1);
+    }
+}
+
+.item-9 img {
+    width: 240px !important;
+}
+
+.audio-icon::after {
+    content: "";
+    background-image: url("../img/audio_icon.png");
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: -100px;
+    margin: auto;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+button:active {
+    transform: scale(0.9);
+    transition: .2s ease-in-out;
+}
